@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "Kizard";
+    src:
+      local("Kizard"),
+      url("kizard.otf") format("opentype")
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background-color: #000;
+    color: #FFF;
+}
+
+h1, h2, h3, h4 {
+    font-family: Kizard;
+    color: #ead42c;
+}
+
+a {
+    color: #ead42c;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header_menu {
+    border-bottom: thin solid #ead42c;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.header_menu__branding,
+.header_menu__branding img {
+    height: 100%;
+    max-width: inherit;
+    width: auto;
+}
+
+.header_menu__menu {
+    height: 100%;
+    display: flex;
+}
+
+.header_menu__menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.header_menu__menu ul li {
+    list-style: none;
+    margin-left: 0.5rem;
+}
+
+.wrapper {
+    max-width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    width: 60rem;
+    margin: auto;
+}
+
+.wrapper.bans img {
+    width: 2rem !important;
+    height: 2rem !important;
+    object-fit: cover;
+}
+
+.matches {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.matches--match {
+    width: 48%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: thin solid #FFF;
+    margin-bottom: 2rem;
+}
+
+.matches--match h3 {
+    margin: 0;
+}
+
+.match_teams {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.match_teams--team {
+    width: 48%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.match_teams--team h4 {
+    margin: 0;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.teams--team {
+    width: 48%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.roster {
+    display: table;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.roster--item {
+    margin-bottom: 1rem;
+    display: table;
+    width: 100%;
+}
+
+.roster--item label {
+    display: block;
+    border: thin solid #ead42c;
+    padding: 1rem;
+}
+
+.roster--item h4 {
+    margin-top: 0;
+}
+
+.roster--item img {
+    width: 4rem;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.stats--team {
+    width: 48%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_html {
+    background-color: transparent;
+}
+
+.card_wrapper img {
+    max-height: 100%;
+    width: auto;
+}
+
+.card_content {
+    width: 50rem;
+    border: thin solid #ead42c;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 2rem 7rem 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0.75rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.card_content h1 {
+    width: 100%;
+    margin: 0 0 1.25rem;
+}
+
+.card_content h2 {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.card_content h3 {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.card_content--stats {
+    width: 100%;
+    margin-top: 1.25rem;
+}
+
+.card_team--stats img {
+    height: 2rem;
+    display: block;
+    margin: 0.5rem auto 0.25rem;
+}
+
+.card_team--stats img.icon_elims {
+    height: 2.55rem;
+}
+
+.card_team--stats img.role_icon_image {
+    height: 10rem;
+}
+
+.card_team--stats--stat {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card_team {
+    width: 50%;
+}
+
+.card_team.role_icon_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_team ul {
+    padding: 0;
+    margin: 0;
+}
+
+.card_team li {
+    list-style: none;
+}
+
+.card_logo {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    height: 3.25rem;
+    margin: auto;
+}
+
+.hero_bans--hero img {
+    max-height: 50vh;
+    border: thin solid #ead42c;
+}
+
+.player_name_title {
+    font-family: sans-serif;
+    color: #FFF;
+}
+
+.role_icon_compare_icon {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.25rem;
+    margin-bottom: -0.4rem;
+}
+
+input[type=submit] {
+   border: thin solid #ead42c;
+   background-color: #ead42c;
+   color: #000;
+   padding: 1rem 2rem;
+   margin: 1rem 0;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background-color: #000;
+   color: #ead42c;
+}
+
+.footer {
+    border-top: thin solid #ead42c;
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}

@@ -1,0 +1,174 @@
+[
+    {
+        "name": "Ana",
+        "image": "ana.png"
+    },
+    {
+        "name": "Ashe",
+        "image": "ashe.png"
+    },
+    {
+        "name": "Baptiste",
+        "image": "baptiste.png"
+    },
+    {
+        "name": "Bastion",
+        "image": "bastion.png"
+    },
+    {
+        "name": "Brigitte",
+        "image": "brigitte.png"
+    },
+    {
+        "name": "Cassidy",
+        "image": "cassidy.png"
+    },
+    {
+        "name": "D.Va",
+        "image": "dva.png"
+    },
+    {
+        "name": "Doomfist",
+        "image": "doomfist.png"
+    },
+    {
+        "name": "Echo",
+        "image": "echo.png"
+    },
+    {
+        "name": "Freja",
+        "image": "freja.png"
+    },
+    {
+        "name": "Genji",
+        "image": "genji.png"
+    },
+    {
+        "name": "Hanzo",
+        "image": "hanzo.png"
+    },
+    {
+        "name": "Hazard",
+        "image": "hazard.png"
+    },
+    {
+        "name": "Illari",
+        "image": "illari.png"
+    },
+    {
+        "name": "Juno",
+        "image": "juno.png"
+    },
+    {
+        "name": "Junkrat",
+        "image": "junkrat.png"
+    },
+    {
+        "name": "Junker Queen",
+        "image": "junker_queen.png"
+    },
+    {
+        "name": "Kiriko",
+        "image": "kiriko.png"
+    },
+    {
+        "name": "Lifeweaver",
+        "image": "lifeweaver.png"
+    },
+    {
+        "name": "Lucio",
+        "image": "lucio.png"
+    },
+    {
+        "name": "Mauga",
+        "image": "mauga.png"
+    },
+    {
+        "name": "Mei",
+        "image": "mei.png"
+    },
+    {
+        "name": "Mercy",
+        "image": "mercy.png"
+    },
+    {
+        "name": "Moira",
+        "image": "moira.png"
+    },
+    {
+        "name": "Orisa",
+        "image": "orisa.png"
+    },
+    {
+        "name": "Pharah",
+        "image": "pharah.png"
+    },
+    {
+        "name": "Ramattra",
+        "image": "ramattra.png"
+    },
+    {
+        "name": "Reaper",
+        "image": "reaper.png"
+    },
+    {
+        "name": "Reinhardt",
+        "image": "reinhardt.png"
+    },
+    {
+        "name": "Roadhog",
+        "image": "roadhog.png"
+    },
+    {
+        "name": "Sigma",
+        "image": "sigma.png"
+    },
+    {
+        "name": "Sojourn",
+        "image": "sojourn.png"
+    },
+    {
+        "name": "Soldier: 76",
+        "image": "soldier_76.png"
+    },
+    {
+        "name": "Sombra",
+        "image": "sombra.png"
+    },
+    {
+        "name": "Symmetra",
+        "image": "symmetra.png"
+    },
+    {
+        "name": "Torbjorn",
+        "image": "torbjorn.png"
+    },
+    {
+        "name": "Tracer",
+        "image": "tracer.png"
+    },
+    {
+        "name": "Venture",
+        "image": "venture.png"
+    },
+    {
+        "name": "Widowmaker",
+        "image": "widowmaker.png"
+    },
+    {
+        "name": "Winston",
+        "image": "winston.png"
+    },
+    {
+        "name": "Wrecking Ball",
+        "image": "wrecking_ball.png"
+    },
+    {
+        "name": "Zarya",
+        "image": "zarya.png"
+    },
+    {
+        "name": "Zenyatta",
+        "image": "zenyatta.png"
+    }
+]
