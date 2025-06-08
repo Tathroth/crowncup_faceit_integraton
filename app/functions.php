@@ -10,6 +10,20 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    function isLoggedIn() {
+        if (isset($_SESSION['username'])) {
+            $config = getConfigData();
+            if ($_SESSION['username'] == $config['user']) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     function appURL() {
         $config_data = getConfigData();
 
@@ -67,6 +81,38 @@
 
         if ($config_data) {
             return $config_data['faceit_org_id'];
+        }
+    }
+
+    function storeStaticData($data, $type) {
+        $json_data = json_encode($data);
+
+        $path = __DIR__ . '/../storage/'.$type.'.json';
+
+        $fp = fopen($path, 'w');
+        fwrite($fp, $json_data);
+        fclose($fp);
+    }
+
+    function getStaticData($type) {
+        // Replace with the full path to your JSON file
+        $filePath = __DIR__ . '/../storage/'.$type.'.json';
+
+        if (file_exists($filePath)) {
+            $jsonContent = file_get_contents($filePath);
+
+            
+            // Decode JSON into an associative array
+            $data = json_decode($jsonContent, true);
+
+            if (json_last_error() === JSON_ERROR_NONE) {
+                // Successfully decoded
+                return $data;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
         }
     }
 

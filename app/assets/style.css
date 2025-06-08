@@ -175,6 +175,23 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.card_store_button {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+}
+
+.card_store_button button {
+    margin: auto;
+    background-color: #000;
+    padding: 0.25rem 0.5rem;
+    display: table;
+    border: none;
+    color: #ead42c;
 }
 
 .cards_html {
@@ -284,6 +301,20 @@ img {
     margin-bottom: -0.4rem;
 }
 
+table {
+    width: 100%;
+}
+
+thead {
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+td, th {
+    padding: 0.35rem;
+    border-bottom: thin solid #ead42c;
+}
+
 input[type=submit] {
    border: thin solid #ead42c;
    background-color: #ead42c;
@@ -296,6 +327,84 @@ input[type=submit] {
 input[type=submit]:hover {
    background-color: #000;
    color: #ead42c;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%; 
+    padding: 0.25rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.login {
+    max-width: 20rem;
+    margin: auto;
+}
+
+.bans_overlay_wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bans_overlay_wrap__content {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 35rem;
+    height: 26rem;
+    background-color: #000;
+}
+
+.bans_overlay_wrap__content--team {
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: thin solid #ead42c;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bans_overlay_wrap__content--team--name {
+    max-width: 64%;
+}
+
+.bans_overlay_wrap__content--team--hero {
+    width: 33%;
+    height: 8rem;
+    overflow: hidden;
+}
+
+.bans_overlay_wrap__content--team--hero img {
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+    border: thin solid #ead42c;
+}
+
+.bans_overlay_wrap__content--footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bans_overlay_wrap__content--footer--logo {
+    margin-left: -2rem;
+}
+
+.bans_overlay_wrap__content--footer h2 {
+    color: #FFF;
 }
 
 .footer {

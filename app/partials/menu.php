@@ -6,6 +6,12 @@
         <ul>
             <li><a href="/index.php">Front page</a></li>
             <li><a href="/tournament.php">Tournaments</a></li>
+            <?php if (isLoggedIn()) : ?>
+                <li><a href="/dashboard.php">Dashboard</a></li>
+                <li><a href="/logout.php">Log out</a></li>
+            <?php else : ?>
+                <li><a href="/login.php">Log in</a></li>
+            <?php endif; ?>
             <li><a href="https://drive.google.com/file/d/1U3Zuqkq4a9dUHmzx-YQlSCBTd-7hNfvS/view" target="_blank">Rules</a></li>
             <li><a href="https://discord.gg/WnuvwKHM" target="_blank">Discord</a></li>
         </ul>

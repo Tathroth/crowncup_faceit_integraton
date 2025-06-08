@@ -40,8 +40,11 @@
 </head>
 <body>
 
+   
+
     <div class="card_wrapper">
         <div class="card_content">
+            <?php $store_data = array(); ?>
             <?php if ($match_data) : ?>
                 <?php // $match_data['competition_name'] ?>
                 <h1>Hero bans</h1>
@@ -52,11 +55,14 @@
                     <div class="card_team hero_bans">
                         <div class="card_team--logo">
                             <h2><?= $team['name']; ?></h2>
+                            <?php $store_data['team'][] = $team['name']; ?>
                         </div>
                         <div class="hero_bans--hero">
                             <?php if (isset($ban_arr[$faction])) : ?>
                                 <img src="/../assets/heroes/<?= $ban_arr[$faction]['image'] ?>">
-                                <h3><?= $ban_arr[$faction]['name'] ?></h3>
+                                <?php $store_data['image'][] = $ban_arr[$faction]['image']; ?>
+                                <h3><?= $ban_arr[$faction]['name']; ?></h3>
+                                <?php $store_data['hero'][] = $ban_arr[$faction]['name']; ?>
                             <?php else : ?>
                                 No ban
                             <?php endif; ?>
@@ -68,6 +74,20 @@
             <?php endif; ?>
             <img class="card_logo" src="/../assets/cc_logo_v2.png" alt="Crown Cup Logo">
         </div>
+        <?php if (isLoggedIn() && $store_data) : ?>
+            <div class="card_store_button">
+                <form action="/staticstore.php" method="post">
+                    <input type="hidden" name="type" value="herobans">
+                    <input type="hidden" name="team1" value="<?= $store_data['team'][0]; ?>">
+                    <input type="hidden" name="team2" value="<?= $store_data['team'][1]; ?>">
+                    <input type="hidden" name="hero1" value="<?= $store_data['hero'][0]; ?>">
+                    <input type="hidden" name="hero2" value="<?= $store_data['hero'][1]; ?>">
+                    <input type="hidden" name="image1" value="<?= $store_data['image'][0]; ?>">
+                    <input type="hidden" name="image2" value="<?= $store_data['image'][1]; ?>">
+                    <button type="submit">Store to static hero ban card</button>
+                </form>
+            </div>
+        <?php endif; ?>
     </div>
 </body>
 </html>
