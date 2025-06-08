@@ -1,5 +1,7 @@
 {
     "app_url": "",
+    "user": "",
+    "password": "",
     "faceit_org_id": "",
     "faceit_app_id": "",
     "faceit_app_key": "",
