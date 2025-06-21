@@ -59,9 +59,36 @@
 
             header('Location: dashboard.php?success="Team compare card stored"');
             exit;
-
         break;
-        
+
+        case 'mappool':
+            storeStaticData($_POST['map'], $type);
+
+            header('Location: dashboard.php?success="Map pool is stored"');
+            exit;
+        break;
+        case 'mappick':
+            $current = getStaticData('mappick');
+
+            if ($current) {
+                $current[] = $_POST['map'];
+            } else {
+                $current = array($_POST['map']);
+            }  
+
+            storeStaticData($current, $type);
+
+            header('Location: dashboard.php?success="Map pick is stored"');
+            exit;
+        break;
+        case 'resetmappicks':
+            $current = array();
+
+            storeStaticData($current, 'mappick');
+
+            header('Location: maps/current_map.php?success="Map picks are reset"');
+            exit;
+        break;
         
         default:
             header('Location: dashboard.php?error="Missing type"');

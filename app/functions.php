@@ -94,6 +94,51 @@
         fclose($fp);
     }
 
+    function getStoredMapPool() {
+        $maps = getStaticData('mappool');
+
+        $output = array();
+        $all_maps = getAllMapData();
+
+        if ($maps) {
+            foreach ($maps as $map_id) {
+                foreach ($all_maps as $map_category => $maps_data) {
+                    foreach ($maps_data as $map_data) {
+                        if ($map_id == $map_data['id']) {
+                            $output[$map_category][] = $map_data;
+                        }
+                        continue;
+                    }
+                }
+            }
+        }
+    
+        return $output;
+    }
+
+    function getAllMapData() {
+        // Replace with the full path to your JSON file
+        $filePath = __DIR__ . '/../maps.json';
+
+        if (file_exists($filePath)) {
+            $jsonContent = file_get_contents($filePath);
+
+            
+            // Decode JSON into an associative array
+            $data = json_decode($jsonContent, true);
+
+            if (json_last_error() === JSON_ERROR_NONE) {
+                // Successfully decoded
+
+                return $data;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
     function getStaticData($type) {
         // Replace with the full path to your JSON file
         $filePath = __DIR__ . '/../storage/'.$type.'.json';

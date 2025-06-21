@@ -1,0 +1,194 @@
+{
+  "Clash": [
+    {
+      "name": "Hanaoka",
+      "category": "Clash",
+      "image": "Hanaoka.jpg",
+      "id": 1
+    },
+    {
+      "name": "Throne of Anubis",
+      "category": "Clash",
+      "image": "Throne_of_Anubis.png",
+      "id": 2
+    }
+  ],
+  "Control": [
+    {
+      "name": "Antartic Peninsula",
+      "category": "Control",
+      "image": "Antarctic_Peninsula.png",
+      "id": 3
+    },
+    {
+      "name": "Busan",
+      "category": "Control",
+      "image": "Busan.jpg",
+      "id": 4
+    },
+    {
+      "name": "Ilios",
+      "category": "Control",
+      "image": "Ilios.jpg",
+      "id": 5
+    },
+    {
+      "name": "Lijiang Tower",
+      "category": "Control",
+      "image": "Lijiang_Tower.jpg",
+      "id": 6
+    },
+    {
+      "name": "Nepal",
+      "category": "Control",
+      "image": "Nepal.jpg",
+      "id": 7
+    },
+    {
+      "name": "Oasis",
+      "category": "Control",
+      "image": "Oasis.jpg",
+      "id": 8
+    },
+    {
+      "name": "Samoa",
+      "category": "Control",
+      "image": "Samoa.jpg",
+      "id": 9
+    }
+  ],
+  "Hybrid": [
+    {
+      "name": "Blizzard World",
+      "category": "Hybrid",
+      "image": "Blizzard_World.jpg",
+      "id": 20
+    },
+    {
+      "name": "Eichenwalde",
+      "category": "Hybrid",
+      "image": "Eichenwalde.png",
+      "id": 21
+    },
+    {
+      "name": "Hollywood",
+      "category": "Hybrid",
+      "image": "Hollywood.jpg",
+      "id": 22
+    },
+    {
+      "name": "King's Row",
+      "category": "Hybrid",
+      "image": "Kings_Row.jpg",
+      "id": 23
+    },
+    {
+      "name": "Midtown",
+      "category": "Hybrid",
+      "image": "Midtown.jpg",
+      "id": 24
+    },
+    {
+      "name": "Numbani",
+      "category": "Hybrid",
+      "image": "Numbani.jpg",
+      "id": 25
+    },
+    {
+      "name": "Paraiso",
+      "category": "Hybrid",
+      "image": "Paraiso.jpg",
+      "id": 26
+    }
+  ],
+  "Escort": [
+    {
+      "name": "Circuit Royal",
+      "category": "Escort",
+      "image": "Circuit_Royal.jpg",
+      "id": 10
+    },
+    {
+      "name": "Dorado",
+      "category": "Escort",
+      "image": "Dorado.jpg",
+      "id": 11
+    },
+    {
+      "name": "Havana",
+      "category": "Escort",
+      "image": "Havana.png",
+      "id": 12
+    },
+    {
+      "name": "Junkertown",
+      "category": "Escort",
+      "image": "Junkertown.jpg",
+      "id": 13
+    },
+    {
+      "name": "Rialto",
+      "category": "Escort",
+      "image": "Rialto.jpg",
+      "id": 14
+    },
+    {
+      "name": "Route 66",
+      "category": "Escort",
+      "image": "Route_66.jpg",
+      "id": 15
+    },
+    {
+      "name": "Shambali Monastery",
+      "category": "Escort",
+      "image": "Shambali_Monastery.png",
+      "id": 16
+    },
+    {
+      "name": "Watchpoint Gibraltar",
+      "category": "Escort",
+      "image": "Watchpoint_Gibraltar.jpg",
+      "id": 17
+    }
+  ],
+  "Push": [
+    {
+      "name": "Colosseo",
+      "category": "Push",
+      "image": "Colosseo.png",
+      "id": 27
+    },
+    {
+      "name": "Esperança",
+      "category": "Push",
+      "image": "Esperanca.jpg",
+      "id": 28
+    },
+    {
+      "name": "New Queen Street",
+      "category": "Push",
+      "image": "New_Queen_Street.jpg",
+      "id": 29
+    },
+    {
+      "name": "Runasapi",
+      "category": "Push",
+      "image": "Runasapi.jpg",
+      "id": 30
+    }
+  ],
+  "Flashpoint": [
+    {
+      "name": "Suravasa",
+      "category": "Flashpoint",
+      "image": "Suravasa.jpg",
+      "id": 18
+    },
+    {
+      "name": "New Junk City",
+      "category": "Flashpoint",
+      "image": "New_Junk_City.jpg",
+      "id": 19
+    }
+  ]
+}
