@@ -70,10 +70,26 @@
         case 'mappick':
             $current = getStaticData('mappick');
 
+            $pool = getStoredMapPool();
+            $map_id = $_POST['map'];
+
+            $post_data = array();
+
+            foreach ($pool as $cat => $maps) {
+                foreach ($maps as $map) {
+                    if ($map_id == $map['id']) {
+                        $post_data = array(
+                            'id' => $map_id,
+                            'category' => $cat
+                        );
+                    }
+                }
+            } 
+
             if ($current) {
-                $current[] = $_POST['map'];
+                $current[] = $post_data;
             } else {
-                $current = array($_POST['map']);
+                $current = array($post_data);
             }  
 
             storeStaticData($current, $type);

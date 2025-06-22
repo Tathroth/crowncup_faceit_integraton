@@ -36,8 +36,11 @@
                     <h2><?= $category; ?></h2>
                     <ul class="no_list_style">
                         <?php foreach ($maps as $map) : ?>
-                            
-                            <li><label><input type="radio" name="map" value="<?= $map['id']; ?>"><?= $map['name']; ?></label></li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="map" value="<?= $map['id']; ?>"><?= $map['name']; ?>
+                                </label>
+                            </li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endforeach; ?>

@@ -2,7 +2,7 @@
     include('../functions.php');
 
     $data = getStoredMapPool();
-    $current = getStaticData('mappick');
+    $picked_maps = getStaticData('mappick');
 ?>
 <!DOCTYPE html>
 <html lang="en" class="cards_html">
@@ -22,13 +22,15 @@
                         <?php foreach ($maps as $map) : ?>
                             <?php
                                 $is_picked = '';
-                                if (in_array($map['id'], $current)) {
-                                    $is_picked = 'picked';
+                                if ($picked_maps) {
+                                    foreach ($picked_maps as $picked_map) {
+                                        if ($map['id'] == $picked_map['id']) {
+                                            $is_picked = 'picked';
+                                        } elseif ($category == $picked_map['category']) {
+                                            $is_picked = 'cat_picked';
+                                        }
+                                    }
                                 }
-                                /*$newest_map = end($current);
-                                if ($map['id'] == $newest_map) {
-                                    $is_picked = 'current';
-                                }*/
                             ?>
                             <div class="pool_content--type--item <?= $is_picked; ?>">
                                 <img src="/assets/maps/<?= $map['image'] ?>" alt="<?= $map['name'] ?>">

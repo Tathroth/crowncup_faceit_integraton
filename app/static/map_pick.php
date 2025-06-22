@@ -19,7 +19,7 @@
             <?php if ($data) : ?>
                 <?php foreach ($data as $category => $maps) : ?>
                     <?php foreach ($maps as $map) : ?>
-                        <?php if ($map['id'] == $newest_map) : ?>
+                        <?php if ($map['id'] == $newest_map['id']) : ?>
                             <div class="current_map--content">
                                 <h2><?= $map['name'] ?></h2>
                                 <h3><?= $category ?></h3>
