@@ -44,7 +44,7 @@
                                         <?php foreach ($hero_data as $hero) : ?>
                                             <div class="roster--item">
                                                 <label>
-                                                    <img src="/../assets/heroes/<?= $hero['image'] ?>">
+                                                    <img src="/../assets/heroes/thumbnails/<?= $hero['image'] ?>">
                                                     <b><?= $hero['name']; ?></b>
                                                     <input type="radio" name="ban_<?= $faction; ?>" value="<?= $hero['name']; ?>">
                                                 </label>

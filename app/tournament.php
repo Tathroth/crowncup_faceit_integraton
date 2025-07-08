@@ -2,6 +2,7 @@
     include('functions.php');
 
     $faceit_ord_id = getFaceitOrgId();
+    $exclude_list = getTournamentExcludeList();
 
     $data = getFaceitData('organizers/'.$faceit_ord_id.'/championships');
 ?>
@@ -22,6 +23,10 @@
             <?php foreach ($data['items'] as $tournament) : ?>
                 <?php
                     $tournament_id = $tournament['id']; 
+
+                    if (in_array($tournament_id, $exclude_list)) {
+                        continue;
+                    }
                 ?>
                 <p><a href="/matches/list.php?tournament=<?= $tournament_id; ?>"><?= $tournament['name'] ?></a></p>
             <?php endforeach; ?>

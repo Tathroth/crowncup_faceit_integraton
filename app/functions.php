@@ -116,6 +116,29 @@
         return $output;
     }
 
+    function getTournamentExcludeList() {
+        // Replace with the full path to your JSON file
+        $filePath = __DIR__ . '/../tournament_exclude.json';
+
+        if (file_exists($filePath)) {
+            $jsonContent = file_get_contents($filePath);
+
+            
+            // Decode JSON into an associative array
+            $data = json_decode($jsonContent, true);
+
+            if (json_last_error() === JSON_ERROR_NONE) {
+                // Successfully decoded
+
+                return $data;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
     function getAllMapData() {
         // Replace with the full path to your JSON file
         $filePath = __DIR__ . '/../maps.json';

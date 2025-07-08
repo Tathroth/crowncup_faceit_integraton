@@ -615,6 +615,11 @@ input[type=password] {
     width: 8rem;
 }
 
+iframe {
+    width: 100%;
+    height: 20rem;
+}
+
 .footer {
     border-top: thin solid #ead42c;
     padding: 3rem 0;

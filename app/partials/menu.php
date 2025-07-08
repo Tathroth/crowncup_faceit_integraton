@@ -12,8 +12,7 @@
             <?php else : ?>
                 <li><a href="/login.php">Log in</a></li>
             <?php endif; ?>
-            <li><a href="https://drive.google.com/file/d/1U3Zuqkq4a9dUHmzx-YQlSCBTd-7hNfvS/view" target="_blank">Rules</a></li>
-            <li><a href="https://discord.gg/WnuvwKHM" target="_blank">Discord</a></li>
+            <li><a href="https://drive.google.com/file/d/1fQ3_0jSb8GTL_cNFwV0KO9pvkl63vdP3/view" target="_blank">Rules</a></li>
         </ul>
     </div>
 </div>

@@ -21,7 +21,7 @@
                                 <h2><?= $match_data['teams'][$key]; ?></h2>
                         </div>
                         <div class="bans_overlay_wrap__content--team--hero">
-                            <img src="/../assets/heroes/<?= $hero['img'] ?>">
+                            <img src="/../assets/heroes/thumbnails/<?= $hero['img'] ?>">
                         </div>
                     </div>
                 <?php endforeach; ?>
