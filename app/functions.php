@@ -1,9 +1,9 @@
 <?php
     /*
         TODO:
-        Set up grabbing data from Crown Cup tournaments
-        Login check
-        Function to grab data based on endpoint
+        Make static JSON fetch from configs into a single
+        function with an argument for which file
+        in stead of having a function per file
     */
 
     ini_set('display_errors', 1);
