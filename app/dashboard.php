@@ -17,6 +17,7 @@
 <body>
     <?php include(__DIR__ .'/partials/menu.php'); ?>
     <div class="wrapper"> 
+        <p><a href="/signups.php">Team signups</a></p>
         <h1>Static production links</h1>
         <table>
             <thead>

@@ -23,7 +23,7 @@
     {
       "name": "Busan",
       "category": "Control",
-      "image": "Busan.jpg",
+      "image": "Busan.png",
       "id": 4
     },
     {
@@ -151,6 +151,26 @@
       "id": 17
     }
   ],
+  "Flashpoint": [
+    {
+      "name": "Suravasa",
+      "category": "Flashpoint",
+      "image": "Suravasa.jpg",
+      "id": 18
+    },
+    {
+      "name": "New Junk City",
+      "category": "Flashpoint",
+      "image": "New_Junk_City.jpg",
+      "id": 19
+    },
+    {
+      "name": "Aatlis",
+      "category": "Flashpoint",
+      "image": "Aatlis.png",
+      "id": 31
+    }
+  ],
   "Push": [
     {
       "name": "Colosseo",
@@ -175,20 +195,6 @@
       "category": "Push",
       "image": "Runasapi.jpg",
       "id": 30
-    }
-  ],
-  "Flashpoint": [
-    {
-      "name": "Suravasa",
-      "category": "Flashpoint",
-      "image": "Suravasa.jpg",
-      "id": 18
-    },
-    {
-      "name": "New Junk City",
-      "category": "Flashpoint",
-      "image": "New_Junk_City.jpg",
-      "id": 19
     }
   ]
 }
