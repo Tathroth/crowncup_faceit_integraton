@@ -46,6 +46,10 @@ img {
     padding: 1rem 2rem;
 }
 
+.header_menu__branding {
+    margin-left: 1rem;
+}
+
 .header_menu__branding,
 .header_menu__branding img {
     height: 100%;
@@ -314,7 +318,6 @@ a.matches--match:hover {
 
 .hero_bans--hero img {
     max-height: 50vh;
-    border: thin solid #ead42c;
 }
 
 .player_name_title {
@@ -413,7 +416,6 @@ input[type=password] {
     height: 8rem;
     width: 100%;
     object-fit: cover;
-    border: thin solid #ead42c;
 }
 
 .bans_overlay_wrap__content--footer {
@@ -545,6 +547,15 @@ input[type=password] {
     background-color: #FFF;
 }
 
+.pool_content--type--item.picked.picked_current {
+    border-color: #000;
+}
+
+.pool_content--type--item.picked.picked_current .pool_content--type--item--content,
+.pool_content--type--item.picked.picked_current .pool_content--type--item--content::before {
+    background-color: #000;
+}
+
 .current_maps .pool_content--type--item img {
     opacity: 1;
 }
@@ -561,9 +572,12 @@ input[type=password] {
     color: #000;
 }
 
-.current_maps .pool_content--type--item.cat_picked .pool_content--type--item--content h3 {
+.current_maps .pool_content--type--item.cat_picked .pool_content--type--item--content h3,
+.pool_content--type--item.picked.picked_current .pool_content--type--item--content h3 {
     color: #FFF;
 }
+
+
 
 .no_list_style {
     list-style: none;

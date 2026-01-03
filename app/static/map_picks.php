@@ -22,17 +22,27 @@
                         <?php foreach ($maps as $map) : ?>
                             <?php
                                 $is_picked = '';
+                                $is_current = '';
                                 if ($picked_maps) {
+                                    $picked_counter = 1;
+                                    $picked_length = count($picked_maps);
                                     foreach ($picked_maps as $picked_map) {
                                         if ($map['id'] == $picked_map['id']) {
                                             $is_picked = 'picked';
+
+                                            if ($picked_length == $picked_counter) {
+                                                $is_current = 'picked_current';
+                                            }
                                         } elseif ($category == $picked_map['category']) {
                                             $is_picked = 'cat_picked';
                                         }
+
+                                        
+                                        $picked_counter++;
                                     }
                                 }
                             ?>
-                            <div class="pool_content--type--item <?= $is_picked; ?>">
+                            <div class="pool_content--type--item <?= $is_picked; ?> <?= $is_current; ?>">
                                 <img src="/assets/maps/<?= $map['image'] ?>" alt="<?= $map['name'] ?>">
                                 <div class="pool_content--type--item--content">
                                     <h3><?= $map['name'] ?></h3>

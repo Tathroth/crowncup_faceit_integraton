@@ -16,10 +16,12 @@
         <h2>Information</h2>
         <div class="matches">
             <a class="matches--match" href="/assets/Crown Cup S4 Rulebook.pdf" target="_blank">
-                <h3>Season 4 rules</h3>
+                <h3>Rulebook</h3>
+                <p>Season 4 rules (pdf)</p>
             </a>
             <a class="matches--match" href="#">
                 <h3>Season 4 signup</h3>
+                <p>Opening soon</p>
             </a>
             <a href="/maplist.php" class="matches--match">
                 <h3>Map list</h3>

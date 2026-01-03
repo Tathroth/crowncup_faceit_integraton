@@ -19,6 +19,7 @@
     <div class="wrapper"> 
         <h1>Signups</h1>
         <p>Teams that have signed up</p>
+        <p><a href="/export_signups.php" target="_blank">Export signups to CSV</a></p>
         <div class="matches">
             <?php
                 $basePath = __DIR__ . '/../storage/teams';
@@ -62,13 +63,25 @@
                         return '';
                     }
                 ?>
-                <a class="matches--match" href="/signup/thanks.php?signup_code=<?= $folderName ?>">
-                    <h2><?= $team_name; ?></h2>
+                <div class="matches--match">
+                    <h2>
+                        <a href="/signup/thanks.php?signup_code=<?= $folderName ?>"><?= $team_name; ?></a>
+                    </h2>
                     <p>Division: <?= $team_division; ?></p>
-                </a>
+                    <p><a href="/delete_signup.php?entry=<?= $folderName ?>" class="confirm-link">Delete entry</a></p>
+                </div>
             <?php endforeach; ?>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('.confirm-link').forEach(link => {
+            link.addEventListener('click', e => {
+                if (!confirm('Are you sure you want to continue?')) {
+                e.preventDefault();
+                }
+            });
+        });
+    </script>
     <?php include(__DIR__ .'/partials/footer.php'); ?>
 </body>
 </html>

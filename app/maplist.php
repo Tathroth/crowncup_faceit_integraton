@@ -16,6 +16,11 @@
         <div class="pool_content">
             <?php if ($all_maps) : ?>
                 <?php foreach ($all_maps as $category => $maps) : ?>
+                    <?php
+                        if ($category == 'Clash') {
+                            continue;
+                        }
+                    ?>
                     <div class="pool_content--type">
                         <h2><?= $category ?></h2>
                         <?php foreach ($maps as $map) : ?>
