@@ -148,6 +148,10 @@
         "image": "tracer.png"
     },
     {
+        "name": "Vendetta",
+        "image": "vendetta.png"
+    },
+    {
         "name": "Venture",
         "image": "venture.png"
     },
@@ -162,6 +166,10 @@
     {
         "name": "Wrecking Ball",
         "image": "wrecking_ball.png"
+    },
+    {
+        "name": "Wuyang",
+        "image": "wuyang.png"
     },
     {
         "name": "Zarya",
