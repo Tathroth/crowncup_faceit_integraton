@@ -90,11 +90,39 @@ img {
 }
 
 .matches--match {
-    width: 48%;
+    width: calc(50% - 2rem);
     padding: 1rem;
     box-sizing: border-box;
     border: thin solid #FFF;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 43.75rem) {
+        width: calc(100% - 2rem);
+    }
+}
+
+a.matches--match {
+    text-decoration: none;
+}
+
+a.matches--match:hover {
+    text-decoration: underline;
+}
+
+.matches--match__small {
+    width: calc(25% - 2rem);
+
+    @media screen and (max-width: 50rem) {
+        width: calc(33% - 2rem);
+    }
+
+    @media screen and (max-width: 37.5rem) {
+        width: calc(50% - 2rem);
+    }
+
+    @media screen and (max-width: 25rem) {
+        width: calc(100% - 2rem);
+    }
 }
 
 .matches--match h3 {
@@ -412,6 +440,12 @@ input[type=password] {
     height: 100vh;
     overflow: hidden;
     position: relative;
+}
+
+.pool_wrapper.list_version {
+    height: auto;
+    overflow: auto;
+    background-color: #000;
 }
 
 .pool_wrapper--logo {

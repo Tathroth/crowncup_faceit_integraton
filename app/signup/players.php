@@ -82,14 +82,14 @@
                             <?php if ($player['type'] == 'checkbox') : ?>
                                 <?php foreach($player['options'] as $option) : ?>
                                     <label>
-                                        <input type="<?= $player['type']; ?>" name="<?= $player['name']; ?>_<?= $counter; ?>[]" value="<?= $option ?>"> <?= $option ?><br>
+                                        <input type="<?= $player['type']; ?>" name="<?= $player['name']; ?>_<?= $counter; ?>[]" value="<?= $option ?>" required> <?= $option ?><br>
                                     </label>
                                 <?php endforeach; ?>
                             <?php elseif ($player['type'] == 'file') : ?>
-                                <input type="<?= $player['type']; ?>" name="<?= $player['name']; ?>_<?= $counter; ?>[]" multiple>
+                                <input type="<?= $player['type']; ?>" name="<?= $player['name']; ?>_<?= $counter; ?>[]" multiple required>
                             <?php else : ?>
                                 <label>
-                                    <input type="<?= $player['type']; ?>" name="<?= $player['name']; ?>_<?= $counter; ?>">
+                                    <input type="<?= $player['type']; ?>" name="<?= $player['name']; ?>_<?= $counter; ?>" required>
                                 </label>
                             <?php endif; ?>
                         <?php endforeach; ?>

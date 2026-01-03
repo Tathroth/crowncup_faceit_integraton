@@ -141,10 +141,7 @@
                 </div>
             <?php endforeach; ?>
         <?php else : ?>
-            <p>Match is either a walkover, or we don't have data yet.</p>
-            <pre>
-                <?php var_dump($round_data); ?>
-            </pre>
+            <p>No FaceIT data for this match. It might've been streamed.</p>
         <?php endif; ?>
     </div>
     <?php include(__DIR__ .'/../partials/footer.php'); ?>
