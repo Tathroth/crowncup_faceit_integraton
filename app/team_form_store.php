@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 
     $posted_data = $_POST;
 
@@ -32,6 +32,8 @@ error_reporting(E_ALL);
 
     storeTeamSignup($form_data_json, $timestamp);
 
+    header('Location: /signup/thanks.php?signup_code='.$timestamp);
+    exit;
 
     function storeUploadedImages(
         string $fieldName,
