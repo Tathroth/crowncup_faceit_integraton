@@ -76,7 +76,7 @@
     <script>
         document.querySelectorAll('.confirm-link').forEach(link => {
             link.addEventListener('click', e => {
-                if (!confirm('Are you sure you want to continue?')) {
+                if (!confirm('Are you sure you want to delete this?')) {
                 e.preventDefault();
                 }
             });

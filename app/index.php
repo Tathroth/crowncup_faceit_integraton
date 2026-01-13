@@ -15,13 +15,13 @@
         <h1>Crown Cup - Where champions are crowned!</h1>
         <h2>Information</h2>
         <div class="matches">
-            <a class="matches--match" href="/assets/Crown Cup S4 Rulebook.pdf" target="_blank">
+            <a class="matches--match" href="https://drive.google.com/file/d/1KKgCbSTyYOEQlJ2Z_grRk7nonIeccDaK/view" target="_blank">
                 <h3>Rulebook</h3>
                 <p>Season 4 rules (pdf)</p>
             </a>
-            <a class="matches--match" href="#">
+            <a class="matches--match" href="/signup/index.php">
                 <h3>Season 4 signup</h3>
-                <p>Opening soon</p>
+                <p>Signups are open!</p>
             </a>
             <a href="/maplist.php" class="matches--match">
                 <h3>Map list</h3>
