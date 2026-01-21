@@ -86,6 +86,7 @@
                                     </label>
                                 <?php endforeach; ?>
                             <?php elseif ($player['type'] == 'file') : ?>
+                                <p><b>You can add muliple images by using shift or ctrl. There should be three per player.</b></p>
                                 <input type="<?= $player['type']; ?>" name="<?= $player['name']; ?>_<?= $counter; ?>[]" multiple required>
                             <?php else : ?>
                                 <label>

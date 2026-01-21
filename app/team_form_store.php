@@ -10,6 +10,17 @@
 
     if (!is_dir($path) && !mkdir($path, 0755, true)) {
         throw new RuntimeException('Failed to create directory');
+        die();
+    }
+
+    if (!isset($posted_data['team_name']) || $posted_data['team_name'] == '') {
+        echo 'No team name was given';
+        die();
+    }
+
+    if (!isset($posted_data['player_discord_1']) || $posted_data['player_discord_1'] == '') {
+        echo 'No player was added';
+        die();
     }
 
     // håndter logo eksplisitt
@@ -38,7 +49,7 @@
     function storeUploadedImages(
         string $fieldName,
         string $targetDir,
-        int $maxSizeBytes = 2_000_000
+        int $maxSizeBytes = 5_000_000
     ): array {
         if (!isset($_FILES[$fieldName])) {
             return [];

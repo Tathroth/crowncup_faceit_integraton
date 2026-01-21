@@ -40,13 +40,13 @@
                     $folderName = $dir->getFilename();
                     $fullPath   = $dir->getPathname();
 
-                    if (file_exists($fullPath)) {
+                    if (file_exists($fullPath.'/data.json')) {
                         $jsonContent = file_get_contents($fullPath.'/data.json');
 
                         // Decode JSON into an associative array
                         $data = json_decode($jsonContent, true);
-                        $team_name = '';
-                        $team_division = '';
+                        $team_name = 'NaN';
+                        $team_division = 'NaN';
 
                         if (json_last_error() === JSON_ERROR_NONE) {
                             // Successfully decoded
@@ -56,11 +56,7 @@
                             if (isset($data['division'])) {
                                 $team_division = $data['division'];
                             }
-                        } else {
-                            return '';
                         }
-                    } else {
-                        return '';
                     }
                 ?>
                 <div class="matches--match">
