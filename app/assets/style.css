@@ -494,7 +494,7 @@ input[type=password] {
 }
 
 .pool_content--type--item {
-    height: 20%;
+    height: 11rem;
     margin-bottom: 1.5rem;
     position: relative;
     border: 0.25rem solid #ead42c;

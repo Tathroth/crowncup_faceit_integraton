@@ -19,9 +19,10 @@
                 <h3>Rulebook</h3>
                 <p>Season 4 rules (pdf)</p>
             </a>
-            <a class="matches--match" href="/signup/index.php">
-                <h3>Season 4 signup</h3>
-                <p>Signups are open!</p>
+            <?php // /signup/index.php ?>
+            <a class="matches--match" href="">
+                <h3>Season 5 signup</h3>
+                <p>Signups open on the 13th of July</p>
             </a>
             <a href="/maplist.php" class="matches--match">
                 <h3>Map list</h3>
@@ -29,7 +30,7 @@
             </a>
             <a href="/mappool.php" class="matches--match">
                 <h3>Map pool</h3>
-                <p>Current tournament map pool</p>
+                <p>Season 5 map pool</p>
             </a>
             <a class="matches--match" href="/herolist.php">
                 <h3>Hero list</h3>

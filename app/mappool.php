@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= appURL(); ?>/assets/style.css">
 </head>
 <body>
-    <div class="pool_wrapper list_version">
+    <div class="pool_wrapper" style="background: #000">
         <div class="pool_content">
             <?php if ($data) : ?>
                 <?php foreach ($data as $category => $maps) : ?>

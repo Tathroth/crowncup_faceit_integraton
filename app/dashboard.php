@@ -29,6 +29,20 @@
             </thead>
             <tbody>
                 <tr>
+                    <td>Set current match</td>
+                    <td><p>Set current match data.</p></td>
+                    <td><a href="/current/current_match.php">Set current match data</a></td>
+                </tr>
+                <tr>
+                    <td>Match roster</td>
+                    <td><p>Full screen match roster generated from data from <a href="/current/current_match.php">current match data</a>.</p></td>
+                    <td>
+                        <a href="/static/roster_card.php?team=team1">Get roster card team one</a><br>
+                        <a href="/static/roster_card.php?team=team2">Get roster card team two</a>
+                        
+                    </td>
+                </tr>
+                <tr>
                     <td>Hero bans</td>
                     <td><p>Full screen with hero ban cards.</p><p>You can pick the match to save bans for by going to the correct tournament in <a href="/tournament.php">tournaments</a>, picking the match in question and clicking "Create hero bans cards".</p><p>After loading the card, click "Save".</p></td>
                     <td><a href="/static/hero_bans_card.php">Load static card</a></td>

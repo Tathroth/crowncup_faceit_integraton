@@ -1,182 +1,262 @@
 [
     {
         "name": "Ana",
-        "image": "ana.png"
+        "image": "ana.png",
+        "role": "support"
+    },
+    {
+        "name": "Anran",
+        "image": "anran.png",
+        "role": "dps"
     },
     {
         "name": "Ashe",
-        "image": "ashe.png"
+        "image": "ashe.png",
+        "role": "dps"
     },
     {
         "name": "Baptiste",
-        "image": "baptiste.png"
+        "image": "baptiste.png",
+        "role": "support"
     },
     {
         "name": "Bastion",
-        "image": "bastion.png"
+        "image": "bastion.png",
+        "role": "dps"
     },
     {
         "name": "Brigitte",
-        "image": "brigitte.png"
+        "image": "brigitte.png",
+        "role": "support"
     },
     {
         "name": "Cassidy",
-        "image": "cassidy.png"
+        "image": "cassidy.png",
+        "role": "dps"
     },
     {
         "name": "D.Va",
-        "image": "dva.png"
+        "image": "dva.png",
+        "role": "tank"
+    },
+    {
+        "name": "Domina",
+        "image": "domina.png",
+        "role": "tank"
     },
     {
         "name": "Doomfist",
-        "image": "doomfist.png"
+        "image": "doomfist.png",
+        "role": "tank"
     },
     {
         "name": "Echo",
-        "image": "echo.png"
+        "image": "echo.png",
+        "role": "dps"
+    },
+    {
+        "name": "Emre",
+        "image": "emre.png",
+        "role": "dps"
     },
     {
         "name": "Freja",
-        "image": "freja.png"
+        "image": "freja.png",
+        "role": "dps"
     },
     {
         "name": "Genji",
-        "image": "genji.png"
+        "image": "genji.png",
+        "role": "dps"
     },
     {
         "name": "Hanzo",
-        "image": "hanzo.png"
+        "image": "hanzo.png",
+        "role": "dps"
     },
     {
         "name": "Hazard",
-        "image": "hazard.png"
+        "image": "hazard.png",
+        "role": "tank"
     },
     {
         "name": "Illari",
-        "image": "illari.png"
+        "image": "illari.png",
+        "role": "support"
+    },
+    {
+        "name": "Jetpack Cat",
+        "image": "jetpack_cat.png",
+        "role": "support"
     },
     {
         "name": "Juno",
-        "image": "juno.png"
+        "image": "juno.png",
+        "role": "support"
     },
     {
         "name": "Junkrat",
-        "image": "junkrat.png"
+        "image": "junkrat.png",
+        "role": "dps"
     },
     {
         "name": "Junker Queen",
-        "image": "junker_queen.png"
+        "image": "junker_queen.png",
+        "role": "tank"
     },
     {
         "name": "Kiriko",
-        "image": "kiriko.png"
+        "image": "kiriko.png",
+        "role": "support"
     },
     {
         "name": "Lifeweaver",
-        "image": "lifeweaver.png"
+        "image": "lifeweaver.png",
+        "role": "support"
     },
     {
         "name": "Lucio",
-        "image": "lucio.png"
+        "image": "lucio.png",
+        "role": "support"
     },
     {
         "name": "Mauga",
-        "image": "mauga.png"
+        "image": "mauga.png",
+        "role": "tank"
     },
     {
         "name": "Mei",
-        "image": "mei.png"
+        "image": "mei.png",
+        "role": "dps"
     },
     {
         "name": "Mercy",
-        "image": "mercy.png"
+        "image": "mercy.png",
+        "role": "support"
+    },
+    {
+        "name": "Mizuki",
+        "image": "mizuki.png",
+        "role": "support"
     },
     {
         "name": "Moira",
-        "image": "moira.png"
+        "image": "moira.png",
+        "role": "support"
     },
     {
         "name": "Orisa",
-        "image": "orisa.png"
+        "image": "orisa.png",
+        "role": "tank"
     },
     {
         "name": "Pharah",
-        "image": "pharah.png"
+        "image": "pharah.png",
+        "role": "dps"
     },
     {
         "name": "Ramattra",
-        "image": "ramattra.png"
+        "image": "ramattra.png",
+        "role": "tank"
     },
     {
         "name": "Reaper",
-        "image": "reaper.png"
+        "image": "reaper.png",
+        "role": "dps"
     },
     {
         "name": "Reinhardt",
-        "image": "reinhardt.png"
+        "image": "reinhardt.png",
+        "role": "tank"
     },
     {
         "name": "Roadhog",
-        "image": "roadhog.png"
+        "image": "roadhog.png",
+        "role": "tank"
+    },
+    {
+        "name": "Shion",
+        "image": "shion.png",
+        "role": "dps"
+    },
+    {
+        "name": "Sierra",
+        "image": "sierra.png",
+        "role": "dps"
     },
     {
         "name": "Sigma",
-        "image": "sigma.png"
+        "image": "sigma.png",
+        "role": "tank"
     },
     {
         "name": "Sojourn",
-        "image": "sojourn.png"
+        "image": "sojourn.png",
+        "role": "dps"
     },
     {
         "name": "Soldier: 76",
-        "image": "soldier_76.png"
+        "image": "soldier_76.png",
+        "role": "dps"
     },
     {
         "name": "Sombra",
-        "image": "sombra.png"
+        "image": "sombra.png",
+        "role": "dps"
     },
     {
         "name": "Symmetra",
-        "image": "symmetra.png"
+        "image": "symmetra.png",
+        "role": "dps"
     },
     {
         "name": "Torbjorn",
-        "image": "torbjorn.png"
+        "image": "torbjorn.png",
+        "role": "dps"
     },
     {
         "name": "Tracer",
-        "image": "tracer.png"
+        "image": "tracer.png",
+        "role": "dps"
     },
     {
         "name": "Vendetta",
-        "image": "vendetta.png"
+        "image": "vendetta.png",
+        "role": "dps"
     },
     {
         "name": "Venture",
-        "image": "venture.png"
+        "image": "venture.png",
+        "role": "dps"
     },
     {
         "name": "Widowmaker",
-        "image": "widowmaker.png"
+        "image": "widowmaker.png",
+        "role": "dps"
     },
     {
         "name": "Winston",
-        "image": "winston.png"
+        "image": "winston.png",
+        "role": "tank"
     },
     {
         "name": "Wrecking Ball",
-        "image": "wrecking_ball.png"
+        "image": "wrecking_ball.png",
+        "role": "tank"
     },
     {
         "name": "Wuyang",
-        "image": "wuyang.png"
+        "image": "wuyang.png",
+        "role": "support"
     },
     {
         "name": "Zarya",
-        "image": "zarya.png"
+        "image": "zarya.png",
+        "role": "tank"
     },
     {
         "name": "Zenyatta",
-        "image": "zenyatta.png"
+        "image": "zenyatta.png",
+        "role": "support"
     }
 ]

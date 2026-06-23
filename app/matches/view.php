@@ -30,6 +30,15 @@
         <?php if ($match_data) : ?>
             <h1><?= $match_data['teams']['faction1']['name']; ?> vs <?= $match_data['teams']['faction2']['name']; ?></h1>
             <h2><?= $match_data['competition_name'] ?></h2>
+            <?php if (isLoggedIn()) : ?>
+                <br>
+                <form action="/staticstore.php" method="post">
+                    <input type="hidden" name="type" value="setcurrentmatchid">
+                    <input type="hidden" name="match_id" value="<?= $match_id; ?>">
+                    <button type="submit">Set as current match</button>
+                </form>
+                <br>
+            <?php endif; ?>
             <?php if (isset($match_data['results'])) : ?>
                 <?= $match_data['results']['score']['faction1']; ?> - <?= $match_data['results']['score']['faction2']; ?><br>
                 <?php if (isset($match_data['teams'][$match_data['results']['winner']]['name'])) : ?>

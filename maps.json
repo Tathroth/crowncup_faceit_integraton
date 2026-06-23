@@ -1,29 +1,15 @@
 {
-  "Clash": [
-    {
-      "name": "Hanaoka",
-      "category": "Clash",
-      "image": "Hanaoka.jpg",
-      "id": 1
-    },
-    {
-      "name": "Throne of Anubis",
-      "category": "Clash",
-      "image": "Throne_of_Anubis.png",
-      "id": 2
-    }
-  ],
   "Control": [
     {
       "name": "Antartic Peninsula",
       "category": "Control",
-      "image": "Antarctic_Peninsula.png",
+      "image": "Antarctic_Peninsula.jpg",
       "id": 3
     },
     {
       "name": "Busan",
       "category": "Control",
-      "image": "Busan.png",
+      "image": "Busan.jpg",
       "id": 4
     },
     {
@@ -57,6 +43,26 @@
       "id": 9
     }
   ],
+  "Flashpoint": [
+    {
+      "name": "Suravasa",
+      "category": "Flashpoint",
+      "image": "Suravasa.jpg",
+      "id": 18
+    },
+    {
+      "name": "New Junk City",
+      "category": "Flashpoint",
+      "image": "New_Junk_City.jpg",
+      "id": 19
+    },
+    {
+      "name": "Aatlis",
+      "category": "Flashpoint",
+      "image": "Aatlis.jpg",
+      "id": 31
+    }
+  ],
   "Hybrid": [
     {
       "name": "Blizzard World",
@@ -67,7 +73,7 @@
     {
       "name": "Eichenwalde",
       "category": "Hybrid",
-      "image": "Eichenwalde.png",
+      "image": "Eichenwalde.jpg",
       "id": 21
     },
     {
@@ -99,6 +105,12 @@
       "category": "Hybrid",
       "image": "Paraiso.jpg",
       "id": 26
+    },
+    {
+      "name": "Neon Junction",
+      "category": "Hybrid",
+      "image": "new_junction.jpg",
+      "id": 32
     }
   ],
   "Escort": [
@@ -117,7 +129,7 @@
     {
       "name": "Havana",
       "category": "Escort",
-      "image": "Havana.png",
+      "image": "Havana.jpg",
       "id": 12
     },
     {
@@ -141,7 +153,7 @@
     {
       "name": "Shambali Monastery",
       "category": "Escort",
-      "image": "Shambali_Monastery.png",
+      "image": "Shambali_Monastery.jpg",
       "id": 16
     },
     {
@@ -151,31 +163,11 @@
       "id": 17
     }
   ],
-  "Flashpoint": [
-    {
-      "name": "Suravasa",
-      "category": "Flashpoint",
-      "image": "Suravasa.jpg",
-      "id": 18
-    },
-    {
-      "name": "New Junk City",
-      "category": "Flashpoint",
-      "image": "New_Junk_City.jpg",
-      "id": 19
-    },
-    {
-      "name": "Aatlis",
-      "category": "Flashpoint",
-      "image": "Aatlis.png",
-      "id": 31
-    }
-  ],
   "Push": [
     {
       "name": "Colosseo",
       "category": "Push",
-      "image": "Colosseo.png",
+      "image": "Colosseo.jpg",
       "id": 27
     },
     {
