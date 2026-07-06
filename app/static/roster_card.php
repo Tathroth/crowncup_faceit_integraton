@@ -137,7 +137,7 @@ window.addEventListener('resize', fitPlayerNames);
 
 body {
     margin: 0;
-    background: var(--bg);
+    background: transparent;
     font-family: Kizard;
 }
 
@@ -147,7 +147,7 @@ body {
     min-height: 100vh;
     margin: 0 auto;
     padding: 32px 40px 48px;
-    background: var(--bg);
+    background: transparent;
     color: var(--white);
 }
 

@@ -43,6 +43,11 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Match overlay</td>
+                    <td>Match overlay with team names, scores and bans. Also control sides through current match data.</td>
+                    <td><a href="/static/match_overlay.php">Match overlay</a></td>
+                </tr>
+                <tr>
                     <td>Hero bans</td>
                     <td><p>Full screen with hero ban cards.</p><p>You can pick the match to save bans for by going to the correct tournament in <a href="/tournament.php">tournaments</a>, picking the match in question and clicking "Create hero bans cards".</p><p>After loading the card, click "Save".</p></td>
                     <td><a href="/static/hero_bans_card.php">Load static card</a></td>

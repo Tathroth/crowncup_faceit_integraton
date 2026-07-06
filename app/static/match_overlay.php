@@ -51,10 +51,15 @@
         }
     ?>
     <div class="match-hud">
-        <div class="match-hud__top-corners">
+        <?php
+            /*
+            <div class="match-hud__top-corners">
             <div class="match-hud__corner match-hud__corner--left"></div>
             <div class="match-hud__corner match-hud__corner--right"></div>
         </div>
+            */
+        ?>
+        
 
         <div class="match-hud__top">
             <!-- LEFT TEAM -->
@@ -78,29 +83,6 @@
                 </div>
             </div>
 
-            <!-- CENTER EVENT -->
-            <div class="match-hud__center">
-                <svg class="match-hud__center-shape" viewBox="0 0 530 70" preserveAspectRatio="none" aria-hidden="true">
-                    <!-- base fill -->
-                    <polygon
-                        class="match-hud__center-fill"
-                        points="0,0 530,0 477,70 53,70"
-                    />
-
-                    <!-- 1px yellow line: left slope + bottom + right slope -->
-                    <polyline
-                        class="match-hud__center-line-yellow"
-                        points="16,3 59,60 471,60 514,3"
-                    />
-                </svg>
-
-                <div class="match-hud__center-inner">
-                    <div class="match-hud__brand">CROWN<br>CUP</div>
-                    <div class="match-hud__logo"><img src="/../assets/cc_icon.png" alt=""></div>
-                    <div class="match-hud__season">SEASON<br>FIVE</div>
-                </div>
-            </div>
-
             <!-- RIGHT TEAM -->
             <div class="team-score team-score--right">
                 <div class="team-score__bar">
@@ -120,6 +102,29 @@
                         <img src="/../assets/heroes/thumbnails/<?= $team_data[1]['ban']; ?>" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- CENTER EVENT -->
+        <div class="match-hud__center">
+            <svg class="match-hud__center-shape" viewBox="0 0 530 70" preserveAspectRatio="none" aria-hidden="true">
+                <!-- base fill -->
+                <polygon
+                    class="match-hud__center-fill"
+                    points="0,0 530,0 477,70 53,70"
+                />
+
+                <!-- 1px yellow line: left slope + bottom + right slope -->
+                <polyline
+                    class="match-hud__center-line-yellow"
+                    points="16,3 59,60 471,60 514,3"
+                />
+            </svg>
+
+            <div class="match-hud__center-inner">
+                <div class="match-hud__brand">CROWN<br>CUP</div>
+                <div class="match-hud__logo"><img src="/../assets/cc_icon.png" alt=""></div>
+                <div class="match-hud__season">SEASON<br>FIVE</div>
             </div>
         </div>
     </div>
@@ -145,7 +150,7 @@
 
         body {
             margin: 0;
-            background: #111;
+            background: trasparent;
             font-family: Kizard;
         }
 
@@ -154,7 +159,7 @@
             width: 100vw;
             height: 100vh;
             margin: 0 auto;
-            background: var(--hud-bg);
+            background: trasparent
             overflow: hidden;
         }
 
@@ -189,7 +194,7 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-            padding: 0 34px;
+            padding: 0 20px;
             padding-top: 0;
         }
 
@@ -199,14 +204,15 @@
         .match-hud__center {
             position: absolute;
             left: 50%;
-            top: 0;
-            transform: translateX(-50%);
-            width: 530px;
-            height: 70px;
+            bottom: 0;
+            width: 380px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: visible;
+            overflow: hidden;
+            transform: rotate(180deg);
+            left: calc(50% - 190px);
         }
 
         .match-hud__center-shape {
@@ -235,19 +241,20 @@
             z-index: 1;
             width: 85%;
             height: 100%;
-            padding: 10px 44px 12px;
+            padding: 15px 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             color: var(--hud-white);
             text-align: center;
             text-transform: uppercase;
-            margin-top: -5px;
+            margin-top: -15px;
+            transform: rotate(180deg);
         }
 
         .match-hud__brand,
         .match-hud__season {
-            font-size: 18px;
+            font-size: 14px;
             line-height: 0.95;
         }
 
@@ -265,11 +272,12 @@
         TEAM PANELS
         ========================================= */
         .team-score {
-            margin-top: 50px;
+            margin-top: 10px;
             display: flex;
             align-items: center;
             gap: 8px;
             width: 560px;
+            background: #FFF;
         }
 
         .team-score--right {

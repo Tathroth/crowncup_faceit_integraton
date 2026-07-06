@@ -15,9 +15,9 @@
         <h1>Crown Cup - Where champions are crowned!</h1>
         <h2>Information</h2>
         <div class="matches">
-            <a class="matches--match" href="https://drive.google.com/file/d/1KKgCbSTyYOEQlJ2Z_grRk7nonIeccDaK/view" target="_blank">
+            <a class="matches--match" href="https://drive.google.com/file/d/15nnCHHYccdItMYyPkCrg6nITBdAbNrwH/view" target="_blank">
                 <h3>Rulebook</h3>
-                <p>Season 4 rules (pdf)</p>
+                <p>Season 5 rules (pdf)</p>
             </a>
             <?php // /signup/index.php ?>
             <a class="matches--match" href="">

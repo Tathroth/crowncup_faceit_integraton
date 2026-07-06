@@ -25,10 +25,13 @@
                 <h2>Division</h2>
                 <p>Required. The division your team belongs to.</p>
                 <label>
-                    <input type="radio" name="division" value="challenger" required /> Challenger (B5-D1)<br>
+                    <input type="radio" name="division" value="rookie" required /> Rookie (Max D1)
                 </label>
                 <label>
-                    <input type="radio" name="division" value="champion" required /> Champion (M5 - GM4)
+                    <input type="radio" name="division" value="challenger" required /> Challenger (Max M1)<br>
+                </label>
+                <label>
+                    <input type="radio" name="division" value="champion" required /> Champion (No cap)
                 </label>
                 <label>
                     <h2>Manager discord</h2>

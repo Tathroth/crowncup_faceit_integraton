@@ -12,7 +12,7 @@
             <?php else : ?>
                 <li><a href="/login.php">Log in</a></li>
             <?php endif; ?>
-            <li><a href="https://drive.google.com/file/d/1KKgCbSTyYOEQlJ2Z_grRk7nonIeccDaK/view" target="_blank">Rules</a></li>
+            <li><a href="https://drive.google.com/file/d/15nnCHHYccdItMYyPkCrg6nITBdAbNrwH/view" target="_blank">Rules</a></li>
         </ul>
     </div>
 </div>

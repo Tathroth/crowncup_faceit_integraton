@@ -17,7 +17,7 @@
         <p>Review your data. Contact us on discord if you notice any errors!</p>
         <hr>
         <?php
-            $type = 'teams/'.$_GET['signup_code'].'/data';
+            $type = 'teams/s5/'.$_GET['signup_code'].'/data';
             $data_arr = getStaticData($type);
         ?>
 

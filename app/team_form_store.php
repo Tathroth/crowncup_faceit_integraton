@@ -6,7 +6,7 @@
     $posted_data = $_POST;
 
     $timestamp = time();
-    $path = __DIR__ . '/../storage/teams/' . $timestamp;
+    $path = __DIR__ . '/../storage/teams/s5/' . $timestamp;
 
     if (!is_dir($path) && !mkdir($path, 0755, true)) {
         throw new RuntimeException('Failed to create directory');
@@ -109,7 +109,7 @@
     }
 
     function storeTeamSignup($data, $filename) {
-        $path = __DIR__ . '/../storage/teams/'.$filename.'/data.json';
+        $path = __DIR__ . '/../storage/teams/s5/'.$filename.'/data.json';
 
         $fp = fopen($path, 'w');
         fwrite($fp, $data);

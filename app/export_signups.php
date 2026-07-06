@@ -6,7 +6,7 @@
         exit;
     }
 
-    $basePath = __DIR__ . '/../storage/teams';
+    $basePath = __DIR__ . '/../storage/teams/s5';
 
     $json_paths = array();
 

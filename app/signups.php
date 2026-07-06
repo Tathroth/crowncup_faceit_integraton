@@ -22,7 +22,7 @@
         <p><a href="/export_signups.php" target="_blank">Export signups to CSV</a></p>
         <div class="matches">
             <?php
-                $basePath = __DIR__ . '/../storage/teams';
+                $basePath = __DIR__ . '/../storage/teams/s5';
 
                 foreach (new DirectoryIterator($basePath) as $dir) :
             ?>
