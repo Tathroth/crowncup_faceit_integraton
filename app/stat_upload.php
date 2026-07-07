@@ -20,6 +20,7 @@
         <h1>Upload OW log file</h1>
         <p>Should be found in C:\Users\[userpath]\Documents\Overwatch\Workshop</p>
         <p>Must be created with the workshop code RBXRX</p>
+        <p>Options->Gameplay->Enable Inspector Log File in your settings must be enabled to generate log file.</p>
         <form action="handle_stat_upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="fileToUpload" id="fileToUpload">
             <br>
