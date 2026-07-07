@@ -18,6 +18,7 @@
     <?php include(__DIR__ .'/partials/menu.php'); ?>
     <div class="wrapper"> 
         <p><a href="/signups.php">Team signups</a></p>
+        <p><a href="/stat_upload.php">Upload map stats</a></p>
         <h1>Static production links</h1>
         <table>
             <thead>
@@ -41,6 +42,11 @@
                         <a href="/static/roster_card.php?team=team2">Get roster card team two</a>
                         
                     </td>
+                </tr>
+                <tr>
+                    <td>Previous map stats</td>
+                    <td><p>Displays the newest data uploaded through <a href="/stat_upload.php">upload map stats</a>.</p></td>
+                    <td><a href="/static/last_match_stats.php">Previous map stats static</a></td>
                 </tr>
                 <tr>
                     <td>Match overlay</td>

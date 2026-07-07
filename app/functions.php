@@ -96,7 +96,6 @@
 
     function getStoredMapPool() {
         $maps = getStaticData('mappool');
-
         $output = array();
         $all_maps = getAllMapData();
 
@@ -117,19 +116,13 @@
     }
 
     function getTournamentExcludeList() {
-        // Replace with the full path to your JSON file
         $filePath = __DIR__ . '/../tournament_exclude.json';
 
         if (file_exists($filePath)) {
             $jsonContent = file_get_contents($filePath);
-
-            
-            // Decode JSON into an associative array
             $data = json_decode($jsonContent, true);
 
             if (json_last_error() === JSON_ERROR_NONE) {
-                // Successfully decoded
-
                 return $data;
             } else {
                 return false;
@@ -140,19 +133,13 @@
     }
 
     function getAllMapData() {
-        // Replace with the full path to your JSON file
         $filePath = __DIR__ . '/../maps.json';
 
         if (file_exists($filePath)) {
             $jsonContent = file_get_contents($filePath);
-
-            
-            // Decode JSON into an associative array
             $data = json_decode($jsonContent, true);
 
             if (json_last_error() === JSON_ERROR_NONE) {
-                // Successfully decoded
-
                 return $data;
             } else {
                 return false;
@@ -163,18 +150,13 @@
     }
 
     function getStaticData($type) {
-        // Replace with the full path to your JSON file
         $filePath = __DIR__ . '/../storage/'.$type.'.json';
 
         if (file_exists($filePath)) {
             $jsonContent = file_get_contents($filePath);
-
-            
-            // Decode JSON into an associative array
             $data = json_decode($jsonContent, true);
 
             if (json_last_error() === JSON_ERROR_NONE) {
-                // Successfully decoded
                 return $data;
             } else {
                 return false;
@@ -184,19 +166,84 @@
         }
     }
 
+    function getLastMapData() {
+        $parentFolder = __DIR__ . '/../storage/statfiles';
+
+        if (!is_dir($parentFolder)) {
+            die("Directory does not exist.");
+        }
+
+        $items = scandir($parentFolder);
+        $folders = array_filter($items, function ($item) use ($parentFolder) {
+            return is_dir($parentFolder . '/' . $item);
+        });
+
+        if (empty($folders)) {
+            echo "No folders found.";
+            exit;
+        }
+
+        $newestFolder = '';
+        $latestTime = 0;
+
+        foreach ($folders as $folder) {
+            $folderPath = $parentFolder . '/' . $folder;
+            $modificationTime = filemtime($folderPath);
+
+            if ($modificationTime > $latestTime) {
+                $latestTime = $modificationTime;
+                $newestFolder = $folder;
+            }
+        }
+
+        $newestFolder = $parentFolder.'/'.$newestFolder;
+        $file_items = scandir($newestFolder);
+        $files = array_filter($file_items, function ($file_item) use ($newestFolder) {
+            return is_file($newestFolder . '/' . $file_item);
+        });
+
+        if (empty($files)) {
+            echo "No files found.";
+            exit;
+        }
+
+        $newestFile = '';
+        $latestTime = 0;
+
+        foreach ($files as $file) {
+            $filePath = $newestFolder . '/' . $file;
+            $modificationTime = filemtime($filePath);
+
+            if ($modificationTime > $latestTime) {
+                $latestTime = $modificationTime;
+                $newestFile = $file;
+            }
+        }
+
+        $newestFile = $newestFolder.'/'.$newestFile;
+
+        if (file_exists($newestFile)) {
+            $jsonContent = file_get_contents($newestFile);
+            $data = json_decode($jsonContent, true);
+
+            if (json_last_error() === JSON_ERROR_NONE) {
+                return $data;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }  
+    }
+
     function getHeroData() {
-        // Replace with the full path to your JSON file
         $filePath = __DIR__ . '/../heroes.json';
 
         if (file_exists($filePath)) {
             $jsonContent = file_get_contents($filePath);
-
-            
-            // Decode JSON into an associative array
             $data = json_decode($jsonContent, true);
 
             if (json_last_error() === JSON_ERROR_NONE) {
-                // Successfully decoded
                 return $data;
             } else {
                 return false;
@@ -207,18 +254,13 @@
     }
 
     function getConfigData() {
-        // Replace with the full path to your JSON file
         $filePath = __DIR__ . '/../config.json';
 
         if (file_exists($filePath)) {
             $jsonContent = file_get_contents($filePath);
-
-            
-            // Decode JSON into an associative array
             $data = json_decode($jsonContent, true);
 
             if (json_last_error() === JSON_ERROR_NONE) {
-                // Successfully decoded
                 return $data;
             } else {
                 return '';
