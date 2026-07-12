@@ -30,7 +30,7 @@
         <p>Number of players: <?= $data_arr['players']; ?></p>
         <p>Team logo: <?php if (isset($data_arr['team_logo'][0])) : ?>
             <a
-                href="/download.php?file=teams/<?= $_GET['signup_code']; ?>/<?= $data_arr['team_logo'][0]; ?>"
+                href="/download.php?file=teams/s5/<?= $_GET['signup_code']; ?>/<?= $data_arr['team_logo'][0]; ?>"
                 target="_blank"
             ><?= $data_arr['team_logo'][0]; ?></a>
             <?php else : ?>
@@ -60,7 +60,7 @@
                         <ul>
                             <?php foreach ($data_arr['player_profile_screenshots_'.$counter] as $screenshot) : ?>
                                 <li><a
-                                    href="/download.php?file=teams/<?= $_GET['signup_code']; ?>/<?= $screenshot; ?>"
+                                    href="/download.php?file=teams/s5/<?= $_GET['signup_code']; ?>/<?= $screenshot; ?>"
                                     target="_blank"
                                 ><?= $screenshot; ?></a></li>
                             <?php endforeach; ?>
