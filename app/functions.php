@@ -187,6 +187,9 @@
         $latestTime = 0;
 
         foreach ($folders as $folder) {
+            if ($folder == '.' || $folder == '..') {
+                continue;
+            }
             $folderPath = $parentFolder . '/' . $folder;
             $modificationTime = filemtime($folderPath);
 

@@ -33,65 +33,72 @@
 </head>
 <body>
     <div class="team-showcase">
-    <div class="team-showcase__header">
-        <div class="team-showcase__team">
-            <div class="team-showcase__team-logo">
-                <img src="<?= $team_data['logo']; ?>" alt="<?= $team_data['name']; ?> logo">
+        <div class="team-showcase__header">
+            <div class="team-showcase__team">
+                <?php if ($team_data['logo'] != '') : ?>
+                    <div class="team-showcase__team-logo">
+                        <img src="<?= $team_data['logo']; ?>" alt="<?= $team_data['name']; ?> logo">
+                    </div>
+                <?php endif; ?>
+
+                <h1 class="team-showcase__team-name"><?= $team_data['name']; ?></h1>
             </div>
 
-            <h1 class="team-showcase__team-name"><?= $team_data['name']; ?></h1>
+            <div class="team-showcase__event-logo">
+                <img src="/../assets/cc_logo_v2.png" alt="Crown Cup Logo">
+            </div>
         </div>
 
-        <div class="team-showcase__event-logo">
-            <img src="/../assets/cc_logo_v2.png" alt="Crown Cup Logo">
-        </div>
-    </div>
+        <?php
+            $role_order = [
+                'tank' => 0,
+                'dps' => 1,
+                'support' => 2,
+            ];
 
-    <?php
-        $role_order = [
-            'tank' => 0,
-            'dps' => 1,
-            'support' => 2,
-        ];
+            $roster = $team_data['roster'] ?? array();
 
-        $roster = $team_data['roster'] ?? array();
+            uasort($roster, function ($a, $b) use ($role_order) {
+                $a_role = strtolower(trim($a['role'] ?? ''));
+                $b_role = strtolower(trim($b['role'] ?? ''));
 
-        uasort($roster, function ($a, $b) use ($role_order) {
-            $a_role = strtolower(trim($a['role'] ?? ''));
-            $b_role = strtolower(trim($b['role'] ?? ''));
+                $a_sort = $role_order[$a_role] ?? 999;
+                $b_sort = $role_order[$b_role] ?? 999;
 
-            $a_sort = $role_order[$a_role] ?? 999;
-            $b_sort = $role_order[$b_role] ?? 999;
+                return $a_sort <=> $b_sort;
+            });
+        ?>
 
-            return $a_sort <=> $b_sort;
-        });
-    ?>
+        <div class="team-showcase__players">
+            <?php foreach ($roster as $player) : ?>
+                <article class="player-card">
+                    <div class="player-card__image">
+                        <?php
+                            $hero_lookup_key = strtolower(trim($player['hero'] ?? ''));
+                            $hero = $heroes_by_name[$hero_lookup_key] ?? null;
 
-    <div class="team-showcase__players">
-        <?php foreach ($roster as $player) : ?>
-            <article class="player-card">
-                <div class="player-card__image">
-                    <?php
-                        $hero_lookup_key = strtolower(trim($player['hero'] ?? ''));
-                        $hero = $heroes_by_name[$hero_lookup_key] ?? null;
-
-                        $hero_image = $hero['image'] ?? '';
-                    ?>
-                    <img src="/../assets/heroes/rosters/<?= $hero_image; ?>" alt="">
-                </div>
-
-                <div class="player-card__meta">
-                    <div class="player-card__role">
-                        <img src="/../assets/icons/<?= $player['role']; ?>.png" alt="">
-                        <img src="role-dps.png" alt="">
+                            $hero_image = $hero['image'] ?? '';
+                        ?>
+                        <img src="/../assets/heroes/rosters/<?= $hero_image; ?>" alt="">
                     </div>
 
-                    <div class="player-card__name"><?= $player['name']; ?></div>
-                </div>
-            </article>
-        <?php endforeach; ?>
+                    <div class="player-card__meta">
+                        <div class="player-card__role">
+                            <img src="/../assets/icons/<?= $player['role']; ?>.png" alt="">
+                            <img src="role-dps.png" alt="">
+                        </div>
+
+                        <div class="player-card__name"><?= $player['name']; ?></div>
+                    </div>
+                </article>
+            <?php endforeach; ?>
+        </div>
+        <?php if ($team_data['coach'] != '') : ?>
+            <div class="team_coach">
+                Coach: <?= $team_data['coach']; ?>
+            </div>
+        <?php endif; ?>
     </div>
-</div>
 <script>
 function fitPlayerNames() {
     const names = document.querySelectorAll('.player-card__name');
@@ -149,11 +156,18 @@ body {
     padding: 32px 40px 48px;
     background: transparent;
     color: var(--white);
+    position: relative;
+}
+
+.team_coach {
+    position: absolute;
+    bottom: 10rem;
+    font-size: 1.75rem;
 }
 
 .team-showcase__header {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 32px;
     margin-bottom: 28px;
