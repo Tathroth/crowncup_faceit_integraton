@@ -127,6 +127,12 @@
       "id": 11
     },
     {
+      "name": "Watchpoint: Grimsvötn",
+      "category": "Escort",
+      "image": "grimsvotn.jpg",
+      "id": 33
+    },
+    {
       "name": "Havana",
       "category": "Escort",
       "image": "Havana.jpg",

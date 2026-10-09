@@ -20,9 +20,9 @@
                 <p>Season 5 rules (pdf)</p>
             </a>
             <?php // /signup/index.php ?>
-            <a class="matches--match" href="/signup/index.php">
+            <a class="matches--match" href="#">
                 <h3>Season 5 signup</h3>
-                <p>Signup is open!</p>
+                <p>Signup is closed!</p>
             </a>
             <a href="/maplist.php" class="matches--match">
                 <h3>Map list</h3>

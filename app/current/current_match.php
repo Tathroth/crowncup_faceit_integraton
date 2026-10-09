@@ -173,7 +173,6 @@
                                         id="<?= $team_key; ?>_<?= $player_key; ?>_role"
                                         name="<?= $team_key; ?>[roster][<?= $player_key; ?>][role]"
                                         value="<?= htmlspecialchars($player['role']); ?>"
-                                        readonly
                                     >
                                 </label>
                             </div>
@@ -209,12 +208,6 @@
         document.addEventListener('DOMContentLoaded', function () {
             const heroes = Array.isArray(window.heroData) ? window.heroData : [];
             const heroRoleMap = {};
-
-            heroes.forEach(hero => {
-                if (hero.name && hero.role) {
-                    heroRoleMap[hero.name.trim().toLowerCase()] = hero.role;
-                }
-            });
 
             document.querySelectorAll('.hero-input').forEach(input => {
                 function updateRoleFromHero() {

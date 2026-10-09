@@ -40,6 +40,16 @@
         "role": "tank"
     },
     {
+        "name": "D.Mon",
+        "image": "dmon.png",
+        "role": "tank"
+    },
+    {
+        "name": "Doctrine",
+        "image": "doctrine.png",
+        "role": "support"
+    },
+    {
         "name": "Domina",
         "image": "domina.png",
         "role": "tank"
@@ -202,7 +212,7 @@
     {
         "name": "Sombra",
         "image": "sombra.png",
-        "role": "dps"
+        "role": "support"
     },
     {
         "name": "Symmetra",
