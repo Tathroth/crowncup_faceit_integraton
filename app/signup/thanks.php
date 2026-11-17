@@ -17,17 +17,17 @@
         <p>Review your data. Contact us on discord if you notice any errors!</p>
         <hr>
         <?php
-            $type = 'teams/s5/'.$_GET['signup_code'].'/data';
+            $type = 'teams/rr2026/'.$_GET['signup_code'].'/data';
             $data_arr = getStaticData($type);
         ?>
 
         <h2><?= $data_arr['team_name']; ?></h2>
-        <p>Division: <?= $data_arr['division']; ?></p>
-        <p>Manager discord: <?= $data_arr['manager_discord']; ?></p>
-        <p>Manager bnet: <?= $data_arr['manager_bnet']; ?></p>
-        <p>Manager faceit: <?= $data_arr['manager_faceit']; ?></p>
-        <p>Coach discord: <?= $data_arr['coach_discord']; ?></p>
-        <p>Number of players: <?= $data_arr['players']; ?></p>
+        <p>Division: <?php echo (isset($data_arr['division'])) ? $data_arr['division'] : ''; ?></p>
+        <p>Manager discord: <?php echo (isset($data_arr['manager_discord'])) ? $data_arr['manager_discord'] : ''; ?></p>
+        <p>Manager bnet: <?php echo (isset($data_arr['manager_bnet'])) ? $data_arr['manager_bnet'] : ''; ?></p>
+        <p>Manager faceit: <?php echo (isset($data_arr['manager_faceit'])) ? $data_arr['manager_faceit'] : ''; ?></p>
+        <p>Coach discord: <?php echo (isset($data_arr['coach_discord'])) ? $data_arr['coach_discord'] : ''; ?></p>
+        <p>Number of players: <?php echo (isset($data_arr['players'])) ? $data_arr['players'] : ''; ?></p>
         <p>Team logo: <?php if (isset($data_arr['team_logo'][0])) : ?>
             <a
                 href="/download.php?file=teams/s5/<?= $_GET['signup_code']; ?>/<?= $data_arr['team_logo'][0]; ?>"

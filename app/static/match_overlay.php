@@ -124,7 +124,7 @@
             <div class="match-hud__center-inner">
                 <div class="match-hud__brand">CROWN<br>CUP</div>
                 <div class="match-hud__logo"><img src="/../assets/cc_icon.png" alt=""></div>
-                <div class="match-hud__season">SEASON<br>FIVE</div>
+                <div class="match-hud__season">ROYAL<br>RUMBLE</div>
             </div>
         </div>
     </div>

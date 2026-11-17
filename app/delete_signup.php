@@ -13,7 +13,7 @@
 
     $signup_to_delete = $_GET['entry'];
 
-    $path = __DIR__ . '/../storage/teams/s5/' . $signup_to_delete;
+    $path = __DIR__ . '/../storage/teams/rr2026/' . $signup_to_delete;
 
     moveFolderToDeleted($path);
 

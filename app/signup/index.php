@@ -22,6 +22,7 @@
                     <p>Required</p>
                     <input name="team_name" type="text" required />
                 </label>
+                <?php /*
                 <h2>Division</h2>
                 <p>Required. The division your team belongs to.</p>
                 <label>
@@ -33,6 +34,7 @@
                 <label>
                     <input type="radio" name="division" value="champion" required /> Champion (No cap)
                 </label>
+                */ ?>
                 <label>
                     <h2>Manager discord</h2>
                     <p>Required. Discord user name of the team manager</p>

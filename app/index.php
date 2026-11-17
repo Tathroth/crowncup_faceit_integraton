@@ -15,13 +15,13 @@
         <h1>Crown Cup - Where champions are crowned!</h1>
         <h2>Information</h2>
         <div class="matches">
-            <a class="matches--match" href="https://drive.google.com/file/d/15nnCHHYccdItMYyPkCrg6nITBdAbNrwH/view" target="_blank">
+            <a class="matches--match" href="#" target="_blank">
                 <h3>Rulebook</h3>
-                <p>Season 5 rules (pdf)</p>
+                <p>Royal Rumble rules (pdf) - Coming soon!</p>
             </a>
             <?php // /signup/index.php ?>
             <a class="matches--match" href="#">
-                <h3>Season 5 signup</h3>
+                <h3>Royal Rumble signup</h3>
                 <p>Signup is closed!</p>
             </a>
             <a href="/maplist.php" class="matches--match">
@@ -30,7 +30,7 @@
             </a>
             <a href="/mappool.php" class="matches--match">
                 <h3>Map pool</h3>
-                <p>Season 5 map pool</p>
+                <p>Royal Rumble map pool</p>
             </a>
             <a class="matches--match" href="/herolist.php">
                 <h3>Hero list</h3>
